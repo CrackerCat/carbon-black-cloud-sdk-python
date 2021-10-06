@@ -2,26 +2,26 @@ sites:
     my_site_name_1:
         # the feed_id of the Enterprise EDR Feed you want to send ThreatIntel to
         # example: 7wP8BEc2QsS8ciEqaRv7Ad
-        feed_id:
+        feed_id: dVM7E1GTRsSP8XHULY1Ykw
 
         # the address of the site (only server ip or dns; don't put https:// or a trailing slash)
         # example: limo.anomali.com
-        site:
+        site: limo.anomali.com
 
         # the path of the site for discovering what services are available
         # this is supplied by your taxii provider
         # example: /api/v1/taxii/taxii-discovery-service/
-        discovery_path:
+        discovery_path: /api/v1/taxii/taxii-discovery-service/
 
         # the path of the site for listing what collections are available to you
         # this is supplied by your taxii provider
         # example: /api/v1/taxii/collection_management/
-        collection_management_path:
+        collection_management_path: /api/v1/taxii/collection_management/
 
         # the path of the site for polling a collection
         # this is supplied by your taxii provider
         # example: /api/v1/taxii/poll/
-        poll_path:
+        poll_path: /api/v1/taxii/poll/
 
         # if you require https for your TAXII service connection, set to true
         # defaults to true
@@ -39,19 +39,19 @@ sites:
         default_score:
 
         # (optional) username for authorization with your taxii provider
-        username:
+        username: guest
 
         # (optional) password for authorization with your taxii provider
-        password:
+        password: guest
 
         # (optional) specify which collections to convert to feeds (comma-delimited)
         # example: Abuse_ch_Ransomware_IPs_F135, DShield_Scanning_IPs_F150
-        collections:
+        collections: Abuse_ch_Ransomware_IPs_F135, DShield_Scanning_IPs_F150
 
         # the start date for which to start requesting data.
         # Use %y-%m-%d %H:%M:%S format
         # example: 2019-01-01 00:00:00
-        start_date:
+        start_date: 2021-09-20 00:00:00
 
         # (optional) the minutes to advance for each request.
         # If you don't have a lot of data, you could advance your requests
